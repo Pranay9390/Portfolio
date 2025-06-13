@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranay Kumar.J | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo">Pranay Kumar.J</a>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button onclick="window.location.href='https://github.com/Pranay9390';" class="btn btn-github">Visit GitHub</button>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container about-container">
+      <img src="Pranay.jpg" alt="Profile" class="profile-img" />
+      <div class="info-box">
+        <h3>Hello, I'm</h3>
+        <h1>Pranay Kumar Janjirala</h1>
+        <p class="role">Frontend Developer</p>
+        <div class="btn-group">
+          <a href="Resume - Google Docs-1.pdf" class="btn">Download CV</a>
+          <a href="https://www.linkedin.com/in/janjirala-pranay-7675b3233/" class="btn">LinkedIn</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Pranay9390"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/janjirala-pranay-7675b3233/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience section">
+    <h2 class="section-title">Internships</h2>
+    <div class="cards">
+      <div class="card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Full Stack Development Intern</h3>
+        <p>Jan - Apr 2024</p>
+        <p>Worked on frontend and backend of web applications.</p>
+        <a href="Edureka - Internship Certificate.pdf" class="btn">View Certificate</a>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-bullhorn"></i>
+        <h3>Digital Marketing Intern</h3>
+        <p>2 Months</p>
+        <p>Promoted services online using SEO & content creation.</p>
+        <a href="DigitalMarketing..png" class="btn">View Certificate</a>
+      </div>
+      <div class="card">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Customer Support Executive</h3>
+        <p>May - Aug 2024</p>
+        <p>Provided support to customers and resolved queries.</p>
+        <a href="Internship.jpg" class="btn">View Certificate</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <h2 class="section-title">Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>GitHub Profile Viewer</h3>
+        <p>Web app to display GitHub user info via username.</p>
+        <a href="https://pranay9390.github.io/Github_Profile/" class="btn">Live Demo</a>
+        <a href="https://github.com/Pranay9390/Github_Profile" class="btn">Repo</a>
+      </div>
+      <div class="card">
+        <h3>QR Code Generator</h3>
+        <p>Converts input into scannable QR code.</p>
+        <a href="https://qr-code-project-theta-five.vercel.app/" class="btn">Live Demo</a>
+        <a href="https://github.com/Pranay9390/QR_Code_Project" class="btn">Repo</a>
+      </div>
+      <div class="card">
+        <h3>Shopping Website Clone</h3>
+        <p>UI for browsing and buying products online.</p>
+        <a href="https://pranay9390.github.io/Shoping_Web-Site/" class="btn">Live Demo</a>
+        <a href="https://github.com/Pranay9390/Shoping_Web-Site" class="btn">Repo</a>
+      </div>
+      <div class="card">
+        <h3>Card Details</h3>
+        <p>Display anime info with styled cards.</p>
+        <a href="https://pranay9390.github.io/Card-Details/" class="btn">Live Demo</a>
+        <a href="https://github.com/Pranay9390/Card-Details" class="btn">Repo</a>
+      </div>
+      <div class="card">
+        <h3>Weather API</h3>
+        <p>Shows weather data based on API calls.</p>
+        <a href="https://pranay9390.github.io/Weather-API/" class="btn">Live Demo</a>
+        <a href="https://github.com/Pranay9390/Weather-API" class="btn">Repo</a>
+      </div>
+      <div class="card">
+        <h3>To-Do Lists</h3>
+        <p>Simple to-do app with task tracking.</p>
+        <a href="https://pranay9390.github.io/To-Do-Lists/" class="btn">Live Demo</a>
+        <a href="https://github.com/Pranay9390/To-Do-Lists" class="btn">Repo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+  <h2 class="section-title">Contact Me</h2>
+  <form
+    id="contactForm"
+    action="https://formspree.io/f/mwpbozwv"
+    method="POST"
+    onsubmit="alert('Message sent successfully!');"
+  >
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" placeholder="Type your message" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      const name = this.name?.value.trim();
+      const email = this.email.value.trim();
+      const message = this.message.value.trim();
+
+      if (!email || !message) {
+        alert("Please fill in all fields.");
+        e.preventDefault();
+      }
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Janjirala Pranay Kumar. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
